@@ -1,9 +1,17 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 
-title = "The Journey to CI/CD"
+title = "Productivity"
 theme = "hugo-theme-learn"
+author = "Edwin Muraya"
+description = "From basic to Advanced"
 
+copyright = "©{year}, All Rights Reserved" 
+showPoweredBy = false 
 # For search functionality
 [outputs]
-home = [ "HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON"]
+
+[params]
+  # Change default color scheme with a variant one. Can be "red", "blue", "green".
+  themeVariant = "green"
