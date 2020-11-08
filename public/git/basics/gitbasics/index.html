@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.71.0" />
+    <meta name="description" content="Documentation for Hugo Learn Theme">
+<meta name="author" content="Eduuh Muraya">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Git basics :: Levelup Productivity</title>
+
+    
+    <link href="/css/nucleus.css?1604826212" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1604826212" rel="stylesheet">
+    <link href="/css/hybrid.css?1604826212" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1604826212" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1604826212" rel="stylesheet">
+    <link href="/css/auto-complete.css?1604826212" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1604826212" rel="stylesheet">
+    <link href="/css/theme.css?1604826212" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1604826212" rel="stylesheet">
+    
+    <link href="/css/theme-red.css?1604826212" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1604826212"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/git/basics/gitbasics/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <img src="/images/productivity.png" width="100", height="100">
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1604826212"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1604826212"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/example.org\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1604826212"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/touchtyping/" title="Touch Typing" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/touchtyping/">
+          <b>1. </b>Touch Typing
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/git/" title="Level up Git" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/git/">
+          <b>2. </b>Level up Git
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/git/basics/aboutgit/" title="Level up Git" class="dd-item ">
+        <a href="/git/basics/aboutgit/">
+        <b>2. </b>Level up Git
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/git/basics/setupgit/" title="Level up Git" class="dd-item ">
+        <a href="/git/basics/setupgit/">
+        <b>2. </b>Level up Git
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/git/basics/gitbasics/" title="Git basics" class="dd-item active">
+        <a href="/git/basics/gitbasics/">
+        <b>2. </b>Git basics
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/Git/basics/gitbasics.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Levelup Productivity</a> > <a href='/git/'>Level up Git</a> > Git basics
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#git-basics">Git basics.</a>
+      <ul>
+        <li><a href="#expectations">Expectations.</a></li>
+        <li><a href="#getting-a-git-repository">Getting a Git repository.</a></li>
+        <li><a href="#cloning-an-existing-repository">Cloning an Existing Repository.</a></li>
+        <li><a href="#recording-changes-to-the-repository">Recording changes to the repository.</a></li>
+        <li><a href="#checking-the-status-of-your-files">Checking the Status of your files.</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Git basics
+            </h1>
+          
+
+        
+
+
+<h2 id="git-basics">Git basics.</h2>
+<p>If you want to get going with git, this is it.
+This section covers vast majority of the thing you&rsquo;l eventually speed your time doing with git.</p>
+<h3 id="expectations">Expectations.</h3>
+<ol>
+<li>You should be able to configure and initialize a repository.</li>
+<li>Begin and stop tracking files and stages and commits changes.</li>
+<li>Know how to set up git to ignore files.</li>
+<li>Know how to Undo mistakes quickly and Easily.</li>
+<li>How to browse the history of your project and view changes between commits.</li>
+<li>How to push and pull from remote repositories.</li>
+</ol>
+<h3 id="getting-a-git-repository">Getting a Git repository.</h3>
+<p>Can be obtained in two ways.</p>
+<ol>
+<li>You can take a local directory that is currently not under version control, turn it into a <strong>git repository</strong>.</li>
+<li>You can clone an existing Git repository from eleswhere&rsquo;</li>
+</ol>
+<h4 id="initializing-a-repository-in-an-existing-directory">Initializing a Repository in an Existing Directory.</h4>
+<pre><code>
+</code></pre><p>If you have a project directory that is currently not under version control and you want to start controlling it with Git, you firt need to go to that project&rsquo;s dirctory.</p>
+<pre><code>mkdir first
+
+cd first
+
+</code></pre><p>This create a new subdirectory named <strong>.git</strong> that contains all of your necessary repoistory files. At this point nothing in your project is tracked yet.</p>
+<pre><code>npm install --global generate-license
+</code></pre><p>👆 The above command install a nice tool we could use to add license to our opensource project. Daah it&rsquo;s a good practise.</p>
+<p>git init</p>
+<p>This create a new subdirectory named <strong>.git</strong> that contains all of your necessary repository files - <strong>a Git repoisotory skeleton</strong>. At this point, nothing in your project is tracked yet. The contents if the <strong>of git will be covered on Git internals</strong></p>
+<pre><code>git add *.c
+git add LICENSE
+git commit -m &quot;initial project version&quot;
+
+</code></pre><h3 id="cloning-an-existing-repository">Cloning an Existing Repository.</h3>
+<ul>
+<li>Git receives a full copy of nearly all data that the server has.</li>
+<li>Every version of every file for the history of the project is pulled down by default when <strong>git clone is run</strong></li>
+</ul>
+<p>You clone a repository with <strong>git clone <!-- raw HTML omitted --></strong>.</p>
+<pre><code>git clone https://github.com/libgit2/libgit2
+</code></pre><h3 id="recording-changes-to-the-repository">Recording changes to the repository.</h3>
+<p>You&rsquo;ll want to start making change and commiting snapshots to those changes into your repository each time the project reaches a state you want to record.</p>
+<p>Remember that each file in your working directory can be in one of two states.</p>
+<ol>
+<li><strong>Tracked or untracted.</strong></li>
+</ol>
+<p>Tracked files are files that were in the last snapshot; they can be <strong>unmodified, modified, or staged.</strong></p>
+<ul>
+<li>Tracked files are files that git knows about.</li>
+</ul>
+<p><strong>Untracked files</strong> are everything else - any files in your working directory that were not in your last snapshot and are not in your staging area.</p>
+<p>When you first clone a repository, all your files will be tracked and umodified because Git just checked them out and you haven&rsquo;t edited anything.</p>
+<h3 id="checking-the-status-of-your-files">Checking the Status of your files.</h3>
+<p>The main tool you use to determine which files are in which state in the <strong>git status</strong> command. If you run this command directly after a clone , you should see something like this.</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/git/basics/setupgit/" title="Level up Git"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/git/basics/aboutgit/" title="Level up Git" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1604826212"></script>
+    <script src="/js/perfect-scrollbar.min.js?1604826212"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1604826212"></script>
+    <script src="/js/jquery.sticky.js?1604826212"></script>
+    <script src="/js/featherlight.min.js?1604826212"></script>
+    <script src="/js/highlight.pack.js?1604826212"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1604826212"></script>
+    <script src="/js/learn.js?1604826212"></script>
+    <script src="/js/hugo-learn.js?1604826212"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1604826212"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

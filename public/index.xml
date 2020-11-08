@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Levelup Productivity</title>
+    <link>http://example.org/</link>
+    <description>Recent content on Levelup Productivity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 12 Oct 2020 20:06:46 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Level up Git</title>
+      <link>http://example.org/git/basics/aboutgit/</link>
+      <pubDate>Mon, 12 Oct 2020 20:06:46 +0000</pubDate>
+      
+      <guid>http://example.org/git/basics/aboutgit/</guid>
+      <description>Welcome, Lets Learn Git Together. Git Basic to Advanced Version control is a system that records changes to a file or set of file over time so that you can recall specific version later. Git was initially designed and developed by Linus Torvalds for linux Kernel development. Git is a free software distributed under the GNU General License Version2.
+The reality you can do this with nearly any type of file on a computer.</description>
+    </item>
+    
+    <item>
+      <title>Level up Git</title>
+      <link>http://example.org/git/basics/setupgit/</link>
+      <pubDate>Mon, 12 Oct 2020 20:06:46 +0000</pubDate>
+      
+      <guid>http://example.org/git/basics/setupgit/</guid>
+      <description>First-Time Git setup. Now that you have git on your sytem, you&amp;rsquo;ll want to do a few things to customize your environment. You should have to do thes things only once on any given computer. they&amp;rsquo;ll stick around between upgrades. You can also change them at any time by running throught commands again.
+git comes with a tool called git config that lets you get and set configuration variable that all aspects of how Git looks and operates.</description>
+    </item>
+    
+    <item>
+      <title>Git basics</title>
+      <link>http://example.org/git/basics/gitbasics/</link>
+      <pubDate>Mon, 12 Oct 2020 20:06:46 +0000</pubDate>
+      
+      <guid>http://example.org/git/basics/gitbasics/</guid>
+      <description>Git basics. If you want to get going with git, this is it. This section covers vast majority of the thing you&amp;rsquo;l eventually speed your time doing with git.
+Expectations.  You should be able to configure and initialize a repository. Begin and stop tracking files and stages and commits changes. Know how to set up git to ignore files. Know how to Undo mistakes quickly and Easily. How to browse the history of your project and view changes between commits.</description>
+    </item>
+    
+  </channel>
+</rss>
