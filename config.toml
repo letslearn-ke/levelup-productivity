@@ -5,6 +5,7 @@ title = "Levelup Productivity"
 theme = "hugo-theme-learn"
 author = "Edwin Muraya"
 description = "From basic to Advanced"
+outdir = "/docs"
 
 copyright = "©{year}, All Rights Reserved" 
 showPoweredBy = false 
